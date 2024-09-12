@@ -1,6 +1,6 @@
 FROM almalinux:8
 ARG username
-USER useradd $username
+USER adduser $username
 CMD ["sleep","100"]
 
 
