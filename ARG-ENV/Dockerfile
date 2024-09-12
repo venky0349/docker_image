@@ -2,8 +2,13 @@ FROM almalinux:8
 ARG username
 RUN adduser $username
 USER $username
+ARG PROJECT
+ARG ENVIRONMENT
+ARG USER
+ENV PROJECT=${PROJECT}
+ENV ENVIRONMENT=${USER}
+ENV USER=${USER}
 CMD ["sleep","100"]
-
 
 
 
